@@ -41,6 +41,7 @@ export interface FormalParameterRest extends Span {
 }
 "#;
 
+/// Represents the root of a JavaScript abstract syntax tree (AST), containing metadata about the source, directives, top-level statements, and scope information.
 #[visited_node(
     scope(ScopeFlags::Top),
     strict_if(self.source_type.is_strict() || self.directives.iter().any(Directive::is_use_strict))
