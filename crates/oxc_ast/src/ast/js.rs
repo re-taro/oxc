@@ -459,7 +459,7 @@ impl<'a> Expression<'a> {
     }
 }
 
-/// Identifier Name
+/// Fundamental syntactic structure used for naming variables, functions, and properties. It must start with a Unicode letter (including $ and _) and can be followed by Unicode letters, digits, $, or _.: `var` in `let var = 1;`
 #[visited_node]
 #[derive(Debug, Clone, Hash)]
 #[cfg_attr(feature = "serialize", derive(Serialize))]
